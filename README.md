@@ -71,3 +71,8 @@ To manually subscribe a function, navigate to the CloudWatch console and follow 
 4. Click _Start Streaming_  
 
 PaperWatch will now begin forwarding the functions logs to Papertrail
+
+
+### Creating the stack from the Command Line
+
+    $ aws cloudformation create-stack --region ap-southeast-2 --stack-name paperwatch-logging --template-body file://./cfn/deploy.cfn.yaml --capabilities CAPABILITY_NAMED_IAM --parameters ParameterKey=SourceBucket,ParameterValue=papertrail-lambda ParameterKey=SourceKey,ParameterValue=lambda.zip
