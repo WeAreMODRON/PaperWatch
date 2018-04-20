@@ -1,6 +1,6 @@
 {
-  "host": "<HOST NAME>",
-  "port": "<PORT>",
+  "host": "logs3.papertrailapp.com",
+  "port": "31870",
   "retentionPeriod": 3,
   "sources": [
     {
